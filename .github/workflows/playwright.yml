@@ -6,6 +6,8 @@ on:
   pull_request:
     branches: [ main ]
   workflow_dispatch:
+  schedule:
+    - cron: "0 1 * * *" # Runs every day at 8:00 giờ VN
 jobs:
   test:
     runs-on: ubuntu-latest

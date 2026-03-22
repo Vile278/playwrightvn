@@ -1,0 +1,18 @@
+[
+  {
+    "userName" : "testuser 1",
+    "email" : "testuser1@example.com",
+    "gender" : "male",
+    "rating" : 3,
+    "uploadFilePath" : "./data/test.dat",
+    "description" : "This is a test bio" 
+  },
+  {
+    "userName" : "testuser 2",
+    "email" : "testuser2@example.com",
+    "gender" : "male",
+    "rating" : 10,
+    "uploadFilePath" : "./data/test.dat",
+    "description" : "This is a test bio" 
+  }
+]

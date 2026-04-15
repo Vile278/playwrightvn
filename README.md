@@ -79,3 +79,14 @@ For example, to run at 8 AM, update `playwright.yml` with:
 (because Vietnam time is UTC +7)
 
 Then add + commit + push the code again.
+
+---
+
+****Step 6: Run on local**
+```
+run all files in tests folder: **npx playwright test**
+```
+```
+run a specific file, e.g **npx playwright test ./tests/test.webtrade.nonfixture.spec.ts**
+```
+---

@@ -73,7 +73,7 @@ Then add + commit + push the code again to see the automation run.
 For example, to run at 8 AM, update `playwright.yml` with:
 
 ```
-- cron: "0 8 * * *"
+- cron: "0 3 * * *"
 ```
 
 (because Vietnam time is UTC +7)

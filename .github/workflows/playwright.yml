@@ -7,7 +7,7 @@ on:
     branches: [ main ]
   workflow_dispatch:
   schedule:
-    - cron: "0 1 * * *" # Runs every day at 8:00 giờ VN
+    - cron: "0 2 * * *" # Runs every day at 9:00 giờ VN
 jobs:
   test:
     runs-on: ubuntu-latest

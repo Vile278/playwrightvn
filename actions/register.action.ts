@@ -4,7 +4,7 @@ import {Config} from "../Config/config"
 import { interest,country } from "../data/selects";
 import { HomePage } from "../pages/home.page";
 import  inputData  from "../data/inputData.json";
-import { text } from "stream/consumers";
+//import { text } from "stream/consumers";
 export class RegisterAction
 {
     // Declare variables

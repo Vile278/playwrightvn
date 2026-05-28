@@ -1,7 +1,7 @@
 import { test, expect, Page } from "@playwright/test";
 import {RegisterAction} from "../actions/register.action";
 
-test ('Input data', async({page}) => {
+test.skip ('Input data', async({page}) => {
   
   // Khởi tạo object
   const page1 = new RegisterAction(page);

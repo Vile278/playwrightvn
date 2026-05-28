@@ -20,9 +20,14 @@ export default defineConfig({
   /* Retry on CI only */
   retries: process.env.CI ? 1 : 0,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 2 : undefined,
+  //workers: process.env.CI ? 2 : undefined, // như này là chạy trên CI dùng 2 worker, còn local thì không định nghĩa nên sẽ dùng số worker mặc định là số CPU cores của máy, giúp chạy nhanh hơn
+  workers: process.env.CI ? 2 : 2,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  //reporter: 'html',
+  reporter: [
+    ['list'],
+    ['allure-playwright']
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
@@ -30,7 +35,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    headless: true
+    headless: false
   },
 
   /* Configure projects for major browsers */

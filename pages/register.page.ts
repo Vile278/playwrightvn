@@ -202,9 +202,9 @@ export class RegisterPage{
         //await this.rating.fill(String(value)); // Cách đơn giản nhất nếu rating là input, nhưng nếu rating là một phần tử đặc biệt không phải input thì có thể sử dụng cách dưới đây để di chuyển chuột đến vị trí tương ứng với giá trị rating:
         //cách 2: dùng evaluate: thực thi mã JavaScript ngay trong trình duyệt
         await this.rating.evaluate((el: HTMLInputElement, value) => { //evaluate cho phép tực thi mã JavaScript ngay trong trình duyệt.            
-        el.value = value;
-        el.dispatchEvent(new Event('input', { bubbles: true })); // giống như user đang kéo chuột để thay đổi giá trị
-        el.dispatchEvent(new Event('change', { bubbles: true })); // giống như user thả chuột ra để hoàn thành việc chọn rating
+            el.value = value;
+            el.dispatchEvent(new Event('input', { bubbles: true })); // giống như user đang kéo chuột để thay đổi giá trị
+            el.dispatchEvent(new Event('change', { bubbles: true })); // giống như user thả chuột ra để hoàn thành việc chọn rating
         }, String(value));
     }    
     //Hover vào tooltip để hiển thị tooltip text:

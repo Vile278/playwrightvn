@@ -1,4 +1,4 @@
-**Step 1: Initialize Git in the `playwrightvn` folder:**
+**Step 1: Initialize Git in the `playwrightvn` folder (optional):**
 
 ```
 git init
